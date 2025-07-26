@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // --- Search Icon 1 ---
   const searchicon1 = document.querySelector('#searchicon1');
   const search1 = document.querySelector('#searchinput1');
   if (searchicon1 && search1) {
@@ -9,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // --- Search Icon 2 ---
   const searchicon2 = document.querySelector('#searchicon2');
   const search2 = document.querySelector('#searchinput2');
   if (searchicon2 && search2) {
@@ -19,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // --- Hamburger menu toggle ---
   const bar = document.querySelector('.fa-bars');
   const cross = document.querySelector('#hdcross');
   const headerbar = document.querySelector('.headerbar');
@@ -38,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // --- Menu Ordering ---
   const menu = [
     { name: "Paneer Pakora", price: 120 },
     { name: "Samosa", price: 80 },
@@ -54,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const order = [];
 
-  // Populate menu options
   menu.forEach((item, idx) => {
     const opt = document.createElement('option');
     opt.value = idx;
@@ -108,7 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // --- Login Modal ---
   const loginModal = document.getElementById('loginModal');
   window.onload = function () {
     if (loginModal) {
