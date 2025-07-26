@@ -298,7 +298,7 @@ header{
     margin-top: 270px;
     display: flex;
     flex-wrap: wrap-reverse;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 .main_slide4 .chef-feed{
     flex: 0.5;
@@ -376,7 +376,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 .letter-head{
     flex: 0.5;
@@ -631,4 +631,65 @@ header{
     .footer-2 h2{
         font-size: 20px;
     }
+}
+.order-section {
+  padding: 40px;
+  background: rgb(255, 214, 176);
+  margin: 40px 7vw;
+  border-radius: 10px;
+}
+.order-section select,
+.order-section input {
+  margin: 0 10px;
+  padding: 5px;
+}
+#orderTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+#orderTable th, #orderTable td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+.login-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.login-content input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+}
+
+.login-content button {
+  padding: 10px 20px;
+  background-color: rgb(253, 77, 8);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-content button:hover {
+  background-color: rgb(220, 60, 5);
 }
