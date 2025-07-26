@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <div id="loginModal" class="login-modal">
+  <div class="login-content">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Enter Username" />
+    <input type="password" id="password" placeholder="Enter Password" />
+    <button onclick="login()">Login</button>
+  </div>
+</div>
 
     <header class="header">
         <div class="headerbar">
@@ -69,6 +77,7 @@
                 <li><a href="#">Book Table</a></li>
             </ul>
         </div>
+        
         <div>
             <div class="account">
                 <ul>
@@ -217,6 +226,24 @@
             </div>
             <div class="dsgn"></div>
         </div>
+<section class="order-section">
+  <h2>Place Your Order</h2>
+  <div>
+    <label for="menu-item">Select Dish:</label>
+    <select id="menu-item"></select>
+    <label>Quantity:</label>
+    <input type="number" id="qty" min="1" value="1">
+    <button id="addOrderBtn">Add to Order</button>
+  </div>
+  <table id="orderTable">
+    <thead>
+      <tr><th>Dish</th><th>Qty</th><th>Unit Price</th><th>Total</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <p>Total Bill: ₹<span id="totalBill">0</span></p>
+</section>
+
         <div class="main_slide4">
             <div class="chef-feed">
                 <h2>Customer <span style="color: red;">Feedback</span></h2>
@@ -276,6 +303,7 @@
             <h2>Powered by <em>FlavourHire</em></h2>
         </div>
     </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
